@@ -89,7 +89,7 @@ pressButton(A,100)
 
 #アンコールワットバグの操作を行う
 #みんなで挑戦を選択する手前の画面で起動する
-def ancoreWatt():
+def encoreWatt():
 
     pressButton(A,d=2800);
 
@@ -141,7 +141,7 @@ if __name__ == "__main__":
 	#アンコールワットをN回繰り返し
 	N = 500;
 	for i in range(N):
-		ancoreWatt();
+		encoreWatt();
 		delay(500)
 
 
