@@ -78,8 +78,8 @@ ZIPを解凍し，できたSwitchControlLibrary-masterを[Arduinoがインスト
 >ここにアクセスし，Clone or download→ Download ZIPして解凍
 >Arduino IDEを開き，PokemonSWSHAutomation-master\arduino_firmware\pokemon_automation_arduino_firmware\pokemon_automation_arduino_firmware.inoを開く．
 - 5について補足
-	- そんなパスもファイルも無い
-	- firmwareフォルダ内にあるdefault.icoが上に示されてるファイルに対応するのでそちらを使用する
+	- そんなパスもファイルも無い（多分バージョンアップで構成が変わった）
+	- arduino_firmwareフォルダ内にあるdefault.inoが上に示されてるファイルに対応するのでそちらを使用する
 
 以下記事に補足なし  
 参考記事通りで全部OK！
@@ -90,7 +90,7 @@ ZIPを解凍し，できたSwitchControlLibrary-masterを[Arduinoがインスト
 ## あとがき
 - default.icoの代わりに上で[駄目だと書いた記事](https://qiita.com/sobassy/items/cb707e50f2f27a851886)のソースを参考にしながら直接C++コードを書きこめばスタンドアロンで動くシステムになります
 
-- 自分はC++苦手マンなので、Pythonでdefault.icoと通信する用のプログラムを書いてPokemonAutomationの代わりにしています。
+- 自分はC++苦手マンなので、Pythonでdefault.inoと通信する用のプログラムを書いてPokemonAutomationの代わりにしています。
 	- PCクライアントを自分で作る場合、Baud Rate=115200でシリアル通信を行えば良いです。
 	- 例えば、default.icoではAボタンが4,PRESS状態が0と定義されているのでシリアル通信で[4,0]をwriteすればAボタンを押せます。
 	- 同じリポジトリ内にpythonファイル置いとくので参考までにどうぞ。
